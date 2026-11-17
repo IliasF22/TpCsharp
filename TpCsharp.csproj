@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <!-- Le TP vise net10.0 ; seul le SDK/runtime .NET 11 est installé sur cette machine. -->
+    <TargetFramework>net11.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Ces dossiers ne font pas partie du programme principal -->
+    <Compile Remove="TpCsharp.Tests/**" />
+    <Compile Remove="Hors-projet/**" />
+    <None Remove="TpCsharp.Tests/**" />
+  </ItemGroup>
+
+</Project>
